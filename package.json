@@ -1,0 +1,41 @@
+{
+  "name": "Chatbot",
+  "version": "1.0.0",
+  "description": "A discord chatbot made using discord.js",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "format": "prettier --write src",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anonymous/chatbot.git"
+  },
+  "keywords": [],
+  "author": "Anonymous4078",
+  "license ": "MIT",
+  "bugs": "https://github.com/Anonymous4078/chatbot/issues",
+  "homepage": "https://github.com/Anonymous4078/chatbot#readme",
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "node": "17.9.1"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.0.12",
+    "pino": "^8.0.0",
+    "pino-pretty": "^8.0.0",
+    "prettier": "^2.6.2",
+    "undici": "^5.0.0",
+    "wget": "^0.0.1"
+  },
+  "lint-staged": {
+    "**/*.{js,md,json}": "prettier --write"
+  }
+}
